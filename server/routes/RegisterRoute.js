@@ -9,7 +9,7 @@ router.post('/', async function (req, res) {
     try {
         const data = req.body; 
 
-        const newUser = new userRoute(data);
+        const newUser = new RegisterRoute(data);
         const response = await newUser.save();
 
         // const payload = {
