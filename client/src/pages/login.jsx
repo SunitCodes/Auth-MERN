@@ -4,7 +4,7 @@ import './login.css'
 
 function Login() {
 
-    const [username, setusername] = useState()
+    const [username, setusername] = useState('')
   
     function handleSignup(event){
       event.preventDefault();

@@ -3,6 +3,7 @@ import './App.css'
 import { createBrowserRouter, RouterProvider, } from "react-router-dom";
 import Register from './pages/register'
 import Login from './pages/login'
+import PasswordGenerator from './pages/passwordGenerator';
 
 
 const router = createBrowserRouter([
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
     path: "/login",
     element: <Login/>,
   },
+  {
+    path: "/password",
+    element: <PasswordGenerator/>,
+  }
 ]);
 
 

@@ -18,8 +18,8 @@ app.get('/',function(req,res){
 const RegisterRoute = require('./routes/RegisterRoute');
 app.use('/register', RegisterRoute);
 
-// const LoginRoute = require('./routes/LoginRoute');
-// app.use('/login', LoginRoute);
+const LoginRoute = require('./routes/LoginRoute');
+app.use('/login', LoginRoute);
 
 
 const PORT = process.env.PORT || 3000; 
